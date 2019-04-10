@@ -15,7 +15,7 @@ npm run client-install
 npm run dev
 
 # Run the Express server only
-npm run server
+yarn dev
 
 # Run the React client only
 npm run client
