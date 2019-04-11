@@ -1,6 +1,6 @@
-# React Express Starter Pack
+# React Node Application
 
-> Create full stack apps with React and Express. Run your client and server with a single command.
+> Create full stack apps with ReactJS and NodeJS. Run your client and server with a single command.
 
 ## Quick Start
 
@@ -24,6 +24,9 @@ yarn start
 ```
 
 ## App Info
+
+> MongoDB
+> Deploy Heroku
 
 ### Author
 
