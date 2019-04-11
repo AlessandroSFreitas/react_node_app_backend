@@ -35,7 +35,7 @@ Alessandro Freitas
 
 ### Version
 
-1.0.0
+1.0.0 (MVP)
 
 ### License
 
