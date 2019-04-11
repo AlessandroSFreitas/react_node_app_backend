@@ -9,6 +9,7 @@ class BoxController {
     return res.json(box);
   }
 
+  // Mostra a box e seus arquivos
   async show(req, res) {
     const box = await Box.findById(req.params.id).populate({
       path: 'files',

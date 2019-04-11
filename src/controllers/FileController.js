@@ -14,6 +14,8 @@ class FileController {
 
     await box.save();
 
+    req.io.sockets.in(bom._id).emit('file', file);
+
     return res.json(file);
   }
 }
