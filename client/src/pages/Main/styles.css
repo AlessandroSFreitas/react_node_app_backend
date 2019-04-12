@@ -1,5 +1,8 @@
 img {
-  width: 50px;
+  align-items: center;
+  animation: App-logo-spin infinite 20s linear;
+  height: 20vmin;
+  pointer-events: none;
 }
 
 #main-container {
@@ -7,6 +10,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #000033;
 }
 
 #main-container form {
@@ -22,4 +26,30 @@ img {
   font-size: 16px;
   padding: 0 20px;
   margin-top: 30px;
+}
+
+#main-container form button {
+  height: 48px;
+  background: #33ccff;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 0 20px;
+  margin-top: 10px;
+  color: #FFF;
+  font-weight: bold;
+  border: 0;
+  cursor: pointer;
+}
+
+#main-container form button:hover {
+  opacity: 0.8;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
