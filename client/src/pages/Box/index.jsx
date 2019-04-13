@@ -3,6 +3,8 @@ import './styles.css';
 import logo from '../../assets/logo.svg';
 import { MdInsertDriveFile } from 'react-icons/md';
 import api from '../../services/api';
+import { distanceInWords } from 'date-fns';
+import pt from 'date-fns/locale/pt';
 
 export default class Box extends Component {
   state = {
@@ -31,7 +33,10 @@ export default class Box extends Component {
                 <strong>{file.title}</strong>
               </a>
 
-              <span>{file.createdAt}</span>
+              <span>há {' '}
+              {distanceInWords(file.createdAt, new Date(), {
+                locale: pt
+              })}</span>
             </li>
           )) }
         </ul>
